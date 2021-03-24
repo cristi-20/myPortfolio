@@ -1,0 +1,221 @@
+// Tablets 
+@media (min-width:768px) {
+    // Start Home
+    .hero {
+        height:40vh;
+
+        h3 {
+            font-size: 1.2rem;
+              }
+              h1 {
+                  font-size: 2.5rem;
+              }
+    }
+
+    .about {
+        max-width:700px;
+        .about-text  {
+            text-align: left;
+            font-size: 1.2rem;
+
+            h1 {
+                text-align: center;
+            }
+        }
+
+        .social-media {
+            width:40%;
+
+            a {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .contact-form {
+        .form {
+
+            .form-container {
+                width:500px;
+            }
+        }
+        
+    }
+     // End Home
+    // Show Full Navigation
+    .menu-btn {
+        display:none;
+    }
+
+    .header {
+        background: $primary_color;
+ 
+        .nav-menu {
+            visibility: visible;
+            transform: none;
+            background-color:transparent;
+            display:flex;
+            align-items: center;
+            width:90%;
+            margin:0 auto;
+            position:unset;
+            
+            .nav-item {
+                transform: none;
+                margin:0;
+            }
+        
+            .nav-ul {
+                flex-direction: row;
+                justify-content:space-evenly;
+                align-items: center;
+                width:
+                100%;
+               margin:0;
+
+               .link-nav {
+                font-size: 1rem;
+            }
+            }
+        }
+    }
+
+    // Start Resume
+    .resume-container {
+        width: 90%;
+        margin: 0 auto;
+
+        .message-case {
+            width:70%;
+        }
+        .resume {
+            margin-top:4rem;
+
+            .item {
+                width:70%;
+            }
+
+            .skills { 
+                font-size: 3.5rem;
+            }
+
+            .tools {
+                .vs-code {
+                    font-size: 1.3rem;
+                    margin:0;
+                }
+            }
+
+            .social-media {
+                width:50%;
+            }
+        }
+    }
+    // End Resume
+}
+
+
+@media (min-width:1024px) {
+    // Start work
+    .work {
+        .project-img {
+            max-width: 40%;
+            cursor: pointer;
+        }
+
+        .overlay {
+            max-width: 40%;
+        }
+    }
+// End work
+
+    // Start Resume
+    .resume-container {
+        .resume {
+            .info-contact {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+            }
+
+            .owl-carousel {
+                display: none;
+            }
+
+            .lg-size-work {
+                display: grid;
+                width:100%;
+                grid-template-columns: repeat(auto-fit,minmax(340px,300px));
+                justify-content: center;
+                column-gap: 2rem;
+
+                .work {
+                    text-align: left;
+                    padding: 2rem;
+                }
+            }
+
+            .skills-tools{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 5rem;
+            }
+
+            .other-skills {
+                width:90%;
+            }
+        }
+    }
+    // End Resume
+}
+
+@media (min-width:1200px) {
+    // Start Home
+    .hero {
+        height:60vh;
+
+        h3 {
+            font-size: 1.4rem;
+        }
+        h1 {
+            font-size: 3rem;
+        }
+    }
+    // End Home
+
+.header {
+    .nav-menu {   
+        .nav-ul {
+      justify-content: flex-end;
+
+      .nav-item{
+          margin-left: 3rem;
+      }
+        }
+    }
+}
+
+// Start Resume
+.resume-container {
+    max-width:1300px;
+    .resume {
+
+        .info-contact,.education-language {
+            column-gap:4rem;
+        }
+
+          .about-me {
+           
+            .message-case {
+                font-size: 1.2rem;
+                            }
+          }  
+        
+          .other-skills {
+              width:60%;
+          }
+}
+
+}
+// End Resume
+}

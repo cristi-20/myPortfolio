@@ -1,0 +1,85 @@
+// Hamburger Button
+.menu-btn {
+  position: absolute;
+  right: 40px;
+  top: 30px;
+  position: fixed;
+  z-index: 11;
+  cursor: pointer;
+  @include easeOut;
+}
+// Navigation Menu.menu-container
+
+.nav-menu {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 2rem;
+  transform: translate(0, -600px);
+  @include easeOut;
+
+  &.show {
+    transform: translate(0, 0);
+  }
+
+  .nav-ul {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // Delay each nav item slide by 0.1s
+    @for $x from 1 through 4 {
+      .nav-item:nth-child(#{$x}) {
+        transition-delay: $x * 0.1s;
+      }
+    }
+
+    .nav-item {
+      margin-top: 1rem;
+      transform: translate3d(600px, 0, 0);
+      @include easeOut;
+      position: relative;
+      &.show {
+        // Slide in from right
+        transform: translate3d(0, 0, 0);
+      }
+      
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background-color:#A4DFE5;
+        transform-origin: bottom right;
+        transform: scaleX(0);
+        transition: transform 0.5s ease;
+      }
+      
+      &:hover::before {
+        transform-origin: bottom left;
+        transform: scaleX(1);
+      }
+
+      .current:visited {
+        color:$secondary_color;
+      }
+
+      .link-nav{
+        color: $text_color;
+        letter-spacing: 2px;
+        padding-bottom:.4rem;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &.show {
+    visibility: visible;
+  }
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../myPortofolio/scss/hover.css" />
+    <link rel="stylesheet" href="../myPortofolio/scss/hover-min.css" />
+    <link rel="stylesheet" href="../myPortofolio/scss/hamburger.css" />
+
+    <link
+      rel="stylesheet"
+      href="../product landing page/JS&Jquery/owl carousel/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../product landing page/JS&Jquery/owl carousel/owl.theme.default.min.css"
+    />
+    <!-- Animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../myPortofolio/scss/main.css" />
+
+    <title>myPortfolio</title>
+  </head>
+  <body>
+    <main class="animate__animated animate__fadeIn">
+      <header class="header">
+        <!-- Hamburger Menu -->
+        <button class="hamburger hamburger--collapse menu-btn" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <!-- Hamburger Menu End-->
+
+        <nav class="nav-menu">
+          <ul class="nav-ul">
+            <li class="nav-item">
+              <a class="link-nav current" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="link-nav" href="work.html">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="link-nav" href="resume.html" id="resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="link-nav" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="link-nav" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container">
+        <section class="hero">
+          <div class="hero-text">
+            <h3 class="animate__animated animate__rotateInDownRight">
+              Manta Cristian
+            </h3>
+            <h1 class="animate__animated animate__lightSpeedInLeft">
+              <span class="web">Web</span> Developer
+            </h1>
+
+            <a href="work.html">
+              <button class="work-btn animate__animated animate__slideInLeft">
+                See My Work
+                <span></span><span></span><span></span><span></span>
+              </button>
+            </a>
+            <a href="resume.html"
+              ><button
+                class="resume-btn animate__animated animate__slideInRight"
+              >
+                Resume
+              </button>
+            </a>
+          </div>
+          <div class="wave-shape">
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill"
+              ></path>
+            </svg>
+          </div>
+        </section>
+
+        <!-- Start About -->
+        <section id="about" class="about" data-aos="fade-left">
+          <div class="about-text">
+            <h1>About Me</h1>
+            <p>
+              I am a self-taught web developer currently looking to find work
+              .<br />I am looking forward for a collaboration.
+            </p>
+          </div>
+          <div class="social-media">
+            <a href="https://github.com/cristi-20?tab=repositories"
+              ><img src="../myPortofolio/img/github.svg" alt="github"
+            /></a>
+            <a href="https://www.facebook.com/manta.cristian20"
+              ><img src="../myPortofolio/img/facebook.svg" alt="facebook"
+            /></a>
+            <a href="https://www.linkedin.com/in/manta-paul-cristian-31a26a209/"
+              ><img
+                class="svg-img"
+                src="../myPortofolio/img/linkedin.svg"
+                alt="linkedin"
+            /></a>
+          </div>
+        </section>
+        <div class="skills">
+          <div class="skills-wrap">
+            <div class="skill-item">
+              <img src="../myPortofolio/img/html-5-logo.svg" alt="" />
+            </div>
+            <div class="skill-item">
+              <img src="../myPortofolio/img/css3-logo.svg" alt="" />
+            </div>
+            <div class="skill-item">
+              <img src="../myPortofolio/img/sass-logo.svg" alt="" />
+            </div>
+            <div class="skill-item">
+              <img src="../myPortofolio/img/javascript-logo.svg" alt="" />
+            </div>
+            <div class="skill-item">
+              <img src="../myPortofolio/img/bootstrap-4-logo.svg" alt="" />
+            </div>
+            <div class="skill-item">
+              <img src="../myPortofolio/img/adobe-xd-logo.svg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- End About -->
+
+        <!-- Start Contact form -->
+        <section id="contact" class="contact-form">
+          <form class="form" action="">
+            <h1>Contact Me</h1>
+            <p>Send me an e-mail.Don't be shy!</p>
+            <div class="form-container">
+              <label for="firstname">First Name*</label>
+              <input
+                class="hvr-border-fade"
+                id="firstname"
+                name="name"
+                type="text"
+              />
+
+              <label for="lastname">Last Name*</label>
+              <input
+                class="hvr-border-fade"
+                id="lastname"
+                name="name"
+                type="text"
+              />
+
+              <label for="e-mail">E-mail*</label>
+              <input
+                class="hvr-border-fade"
+                id="e-mail"
+                name="email"
+                type="text"
+              />
+
+              <label for="subject">Subject*</label>
+              <input
+                class="hvr-border-fade"
+                id="subject"
+                name="subject"
+                type="text"
+              />
+
+              <label for="message">Message</label>
+              <textarea
+                class="hvr-border-fade"
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+
+              <button class="contact-send" type="submit">
+                Send <span></span><span></span><span></span><span></span>
+              </button>
+            </div>
+          </form>
+        </section>
+        <!-- End Contact form -->
+      </div>
+    </main>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"></script>
+
+    <script src="../myPortofolio/js/workbtn.js"></script>
+    <script src="../myPortofolio/js/main.js"></script>
+  </body>
+</html>

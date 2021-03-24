@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../myPortofolio/scss/hover.css" />
+    <link rel="stylesheet" href="../myPortofolio/scss/hover-min.css" />
+    <link rel="stylesheet" href="../myPortofolio/scss/hamburger.css" />
+    <!-- Animate -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+    <link rel="stylesheet" href="../myPortofolio/scss/main.css" />
+    <link rel="stylesheet" href="../myPortofolio/scss/work.css" />
+    
+    <title>myPortfolio</title>
+  </head>
+  <body>
+   
+      <header class="header">
+        <!-- Hamburger Menu -->
+        <button class="hamburger hamburger--collapse menu-btn" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <!-- Hamburger Menu End-->
+
+        <nav class="nav-menu">
+          <ul class="nav-ul">
+            <li class="nav-item">
+              <a class="link-nav" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="link-nav current" href="work.html">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="link-nav" href="resume.html">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="link-nav" href="">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="link-nav" href="">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="work">
+        <h1>Check some of my projects...</h1>
+        <div class="projects">
+          <div class="product-page">
+            <div class="image-button-wrap">
+              <img
+                class="project-img"
+                src="../myPortofolio/img/products_page.png"
+                alt=""
+              />
+
+              <div class="overlay">
+                <button class="view" data-toggle="modal" data-target="#exampleModal">View Details</button>
+              </div>
+            </div>
+            <h3>
+              E-commerce Musical Instruments</h3>
+<!-- Start Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <h4>Technologies used</h4>
+                    <div class="tech">
+                      
+                      
+                      <div class="box"><i class="fab fa-html5"></i></div>
+                      <div class="box"><i class="fab fa-css3-alt"></i></div>
+                      <div class="box"><i class="fab fa-js-square"></i></div>
+                      <div class="box"><i class="fab fa-sass"></i></div>
+                    
+                  </div>
+                    <div class="github">
+                      <h4>Github</h4>
+                      <a href="https://github.com/cristi-20/product-landing-page.git"><i class="fab fa-github"></i></a>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a href="https://mcristian.ro/product%20landing%20page/"><button type="button" class="btn btn-primary">Go to project</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Modal -->
+          </div>
+
+        </div>
+        </div>
+
+        
+      </section>
+
+      <section class="skills">
+        
+      </section>
+    
+
+  
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script src="../myPortofolio/js/workbtn.js"></script>
+    <script src="../myPortofolio/js/main.js"></script>
+    
+  </body>
+</html>
