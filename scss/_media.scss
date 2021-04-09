@@ -1,84 +1,96 @@
 // Tablets 
 @media (min-width:768px) {
     // Start Home
+// Show Full Navigation
+.menu-btn {
+    display:none;
+}
+
+.bg-unset {
+        background-image: unset;
+        background:$primary_color;
+}
+
+
+.header {
+    display:flex;
+    align-items: center;
+
+    .nav-logo-container {
+        width:90%;
+        .logo-container {
+            width:20%;
+          }
+    }
+
+    .logo-container {
+        width:30%;
+        display:flex;
+        justify-content: flex-start;
+      }
+      .logo {
+        position:unset;
+      }
+    .nav-menu {
+        visibility: visible;
+        transform: none;
+        background-color:transparent;
+        display:flex;
+        align-items: center;
+        justify-content: flex-end;
+        position:unset;
+        
+        .nav-item {
+            transform: none;
+            margin:0;
+            margin-left: 1.7rem;
+        }
+    
+        .nav-ul {
+            flex-direction: row;
+            justify-content:flex-end;
+            align-items: center;
+            width:
+            100%;
+           margin:0;
+           font-size: 1rem;
+        }
+    }
+}
+
     .hero {
-        height:40vh;
+        height:55vh;
+        h1 {
+            font-size: 3.2rem;
+        }
 
         h3 {
-            font-size: 1.2rem;
-              }
-              h1 {
-                  font-size: 2.5rem;
-              }
+            font-size: 1.5rem;
+              }  
     }
 
+    .projects {
+        .guitars-logo {
+            width:300px;
+        }   
+    }
+   
     .about {
-        max-width:700px;
-        .about-text  {
-            text-align: left;
-            font-size: 1.2rem;
-
-            h1 {
-                text-align: center;
-            }
-        }
-
         .social-media {
-            width:40%;
-
-            a {
-                font-size: 2rem;
-            }
+            width:50%;
         }
     }
-
+    
     .contact-form {
         .form {
-
             .form-container {
-                width:500px;
+                width:600px;
             }
         }
         
     }
      // End Home
-    // Show Full Navigation
-    .menu-btn {
-        display:none;
-    }
-
-    .header {
-        background: $primary_color;
- 
-        .nav-menu {
-            visibility: visible;
-            transform: none;
-            background-color:transparent;
-            display:flex;
-            align-items: center;
-            width:90%;
-            margin:0 auto;
-            position:unset;
-            
-            .nav-item {
-                transform: none;
-                margin:0;
-            }
-        
-            .nav-ul {
-                flex-direction: row;
-                justify-content:space-evenly;
-                align-items: center;
-                width:
-                100%;
-               margin:0;
-
-               .link-nav {
-                font-size: 1rem;
-            }
-            }
-        }
-    }
+    
 
     // Start Resume
     .resume-container {
@@ -95,20 +107,23 @@
                 width:70%;
             }
 
-            .skills { 
-                font-size: 3.5rem;
+.wrapper {
+    .skills-tools {
+        .tools {
+            .vs-code {
+                font-size: 1.3rem;
+                margin:0;
             }
-
-            .tools {
-                .vs-code {
-                    font-size: 1.3rem;
-                    margin:0;
-                }
-            }
-
-            .social-media {
-                width:50%;
-            }
+        }
+    }
+    
+    .traits-illustration {
+        margin-bottom:10rem;
+        .illustration {
+            width:65%;
+        }
+    }
+}
         }
     }
     // End Resume
@@ -116,19 +131,19 @@
 
 
 @media (min-width:1024px) {
-    // Start work
-    .work {
-        .project-img {
-            max-width: 40%;
-            cursor: pointer;
-        }
+    
+    .projects {
+        flex-direction: row;
+        justify-content: space-around;
+        width:100%;
 
-        .overlay {
-            max-width: 40%;
+        .vintage-guitar {
+            .guitars-logo {
+                margin:0;
+            }
         }
     }
-// End work
-
+    
     // Start Resume
     .resume-container {
         .resume {
@@ -156,13 +171,8 @@
             .skills-tools{
                 display: flex;
                 justify-content: space-around;
-                align-items: center;
                 width: 100%;
                 margin-bottom: 5rem;
-            }
-
-            .other-skills {
-                width:90%;
             }
         }
     }
@@ -171,51 +181,70 @@
 
 @media (min-width:1200px) {
     // Start Home
-    .hero {
-        height:60vh;
+    .header {
+        .nav-logo-container {
+            max-width:1200px;
+            display:flex;
+            justify-content: center;
 
-        h3 {
-            font-size: 1.4rem;
-        }
-        h1 {
-            font-size: 3rem;
-        }
+            .nav-menu {
+                padding:2rem 0;
+            }
+
+            .logo-container {
+                .logo {
+                    width:27%;
+                }
+            }
+          }
+    }
+    
+
+    .hero { 
+        max-height:60vh;
+
     }
     // End Home
 
-.header {
-    .nav-menu {   
-        .nav-ul {
-      justify-content: flex-end;
 
-      .nav-item{
-          margin-left: 3rem;
-      }
-        }
-    }
-}
+
 
 // Start Resume
 .resume-container {
-    max-width:1300px;
     .resume {
-
         .info-contact,.education-language {
             column-gap:4rem;
         }
-
-          .about-me {
-           
+          .about-me { 
             .message-case {
                 font-size: 1.2rem;
                             }
           }  
         
-          .other-skills {
-              width:60%;
-          }
 }
+
+.resume {
+    .wrapper {
+        flex-direction: row; 
+        margin-bottom: 5rem;
+            .skills-tools {
+                .skills {
+                   row-gap: 1rem;
+                   margin:0;
+                }
+            }
+            
+     
+        .traits-illustration {
+            .illustration {
+                width:90%;
+            }
+        }
+    }
+}
+
 
 }
 // End Resume
 }
+

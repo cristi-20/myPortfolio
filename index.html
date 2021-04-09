@@ -29,45 +29,65 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="../myPortofolio/scss/main.css" />
 
     <title>myPortfolio</title>
   </head>
   <body>
-    <main class="animate__animated animate__fadeIn">
-      <header class="header">
-        <!-- Hamburger Menu -->
-        <button class="hamburger hamburger--collapse menu-btn" type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
+    <!-- <div class="loader">
+      <svg class="loading" viewBox="0 0 50 50">
+        <circle class="ring" cx="25" cy="25" r="20"></circle>
+        <circle class="ball" cx="25" cy="5" r="3.5"></circle>
+      </svg>
+    </div> -->
+    <main class="main animate__animated animate__fadeIn">
+      <div class="gradient-bg">
+        <header class="header">
+          <!-- Hamburger Menu -->
+          <button
+            class="hamburger hamburger--collapse menu-btn"
+            id="open"
+            type="button"
+          >
+            <span class="hamburger-box" id="close">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
 
-        <!-- Hamburger Menu End-->
+          <div class="nav-logo-container">
+            <div class="logo-container">
+              <img
+                class="logo"
+                href="index.html"
+                src="../myPortofolio/img/logo.svg"
+                alt=""
+              />
+            </div>
+            <!-- Hamburger Menu End-->
+            <nav class="nav-menu">
+              <ul class="nav-ul">
+                <li class="nav-item">
+                  <a class="link-nav current" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="link-nav" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="link-nav" href="resume.html" id="resume">Resume</a>
+                </li>
+                <li class="nav-item">
+                  <a class="link-nav" href="#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="link-nav" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
 
-        <nav class="nav-menu">
-          <ul class="nav-ul">
-            <li class="nav-item">
-              <a class="link-nav current" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="link-nav" href="work.html">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="link-nav" href="resume.html" id="resume">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a class="link-nav" href="#about">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="link-nav" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      <div class="container">
         <section class="hero">
           <div class="hero-text">
             <h3 class="animate__animated animate__rotateInDownRight">
@@ -76,21 +96,25 @@
             <h1 class="animate__animated animate__lightSpeedInLeft">
               <span class="web">Web</span> Developer
             </h1>
-
-            <a href="work.html">
+            <p class="animate__animated animate__fadeIn">
+              I am a self-taught web developer looking to find work.
+            </p>
+          </div>
+          <div class="cta-wrap">
+            <a href="#projects">
               <button class="work-btn animate__animated animate__slideInLeft">
                 See My Work
                 <span></span><span></span><span></span><span></span>
               </button>
             </a>
-            <a href="resume.html"
-              ><button
-                class="resume-btn animate__animated animate__slideInRight"
-              >
-                Resume
-              </button>
-            </a>
+
+            <a href="#about"
+              ><button class="about-me animate__animated animate__slideInRight">
+                About Me
+              </button></a
+            >
           </div>
+
           <div class="wave-shape">
             <svg
               data-name="Layer 1"
@@ -105,61 +129,98 @@
             </svg>
           </div>
         </section>
-
-        <!-- Start About -->
-        <section id="about" class="about" data-aos="fade-left">
-          <div class="about-text">
-            <h1>About Me</h1>
-            <p>
-              I am a self-taught web developer currently looking to find work
-              .<br />I am looking forward for a collaboration.
-            </p>
-          </div>
-          <div class="social-media">
-            <a href="https://github.com/cristi-20?tab=repositories"
-              ><img src="../myPortofolio/img/github.svg" alt="github"
-            /></a>
-            <a href="https://www.facebook.com/manta.cristian20"
-              ><img src="../myPortofolio/img/facebook.svg" alt="facebook"
-            /></a>
-            <a href="https://www.linkedin.com/in/manta-paul-cristian-31a26a209/"
+      </div>
+      <div class="container">
+        <!-- Start Projects -->
+        <section id="projects" class="projects">
+          <div class="vintage-guitar">
+            <a href="https://www.mcristian.ro/product landing page/"
               ><img
-                class="svg-img"
-                src="../myPortofolio/img/linkedin.svg"
-                alt="linkedin"
+                class="guitars-logo"
+                src="../myPortofolio/img/guitars-logo.svg"
+                data-aos="flip-right"
+                data-aos-delay="400"
+                alt="guitars logo"
             /></a>
+          </div>
+          <div class="skills">
+            <ul class="circle-container">
+              <div class="skill-item">
+                <img
+                  data-aos="fade-left"
+                  data-aos-delay="100"
+                  src="../myPortofolio/img/html-5-logo.svg"
+                  alt=""
+                />
+              </div>
+              <div class="skill-item">
+                <img
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                  src="../myPortofolio/img/css3-logo.svg"
+                  alt=""
+                />
+              </div>
+              <div class="skill-item">
+                <img
+                  data-aos="fade-left"
+                  data-aos-delay="300"
+                  src="../myPortofolio/img/sass-logo.svg"
+                  alt=""
+                />
+              </div>
+              <div class="skill-item">
+                <img
+                  data-aos="fade-right"
+                  data-aos-delay="400"
+                  src="../myPortofolio/img/javascript-logo.svg"
+                  alt=""
+                />
+              </div>
+              <div class="skill-item">
+                <img
+                  data-aos="fade-right"
+                  data-aos-delay="500"
+                  src="../myPortofolio/img/tailwindcss.svg"
+                  alt=""
+                />
+              </div>
+              <div class="skill-item">
+                <img
+                  data-aos-delay="600"
+                  data-aos="fade-right"
+                  src="../myPortofolio/img/adobe-xd-logo.svg"
+                  alt=""
+                />
+              </div>
+            </ul>
           </div>
         </section>
-        <div class="skills">
-          <div class="skills-wrap">
-            <div class="skill-item">
-              <img src="../myPortofolio/img/html-5-logo.svg" alt="" />
-            </div>
-            <div class="skill-item">
-              <img src="../myPortofolio/img/css3-logo.svg" alt="" />
-            </div>
-            <div class="skill-item">
-              <img src="../myPortofolio/img/sass-logo.svg" alt="" />
-            </div>
-            <div class="skill-item">
-              <img src="../myPortofolio/img/javascript-logo.svg" alt="" />
-            </div>
-            <div class="skill-item">
-              <img src="../myPortofolio/img/bootstrap-4-logo.svg" alt="" />
-            </div>
-            <div class="skill-item">
-              <img src="../myPortofolio/img/adobe-xd-logo.svg" alt="" />
-            </div>
+        <!-- End Projects -->
+        <!-- Start About -->
+        <section class="about">
+          <div class="social-media">
+            <a href="https://github.com/cristi-20?tab=repositories"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://www.facebook.com/manta.cristian20"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/manta-paul-cristian-31a26a209/"
+              ><i class="fab fa-linkedin"></i
+            ></a>
           </div>
-        </div>
-
+        </section>
         <!-- End About -->
 
         <!-- Start Contact form -->
         <section id="contact" class="contact-form">
-          <form class="form" action="">
-            <h1>Contact Me</h1>
-            <p>Send me an e-mail.Don't be shy!</p>
+          <form class="form" id="form" action="contactform.php" method="post">
+            <h1>Let's talk!</h1>
+            <p>
+              Send me an e-mail,<br />
+              don't be shy!
+            </p>
             <div class="form-container">
               <label for="firstname">First Name*</label>
               <input
@@ -182,7 +243,7 @@
                 class="hvr-border-fade"
                 id="e-mail"
                 name="email"
-                type="text"
+                type="email"
               />
 
               <label for="subject">Subject*</label>
@@ -202,7 +263,7 @@
                 rows="10"
               ></textarea>
 
-              <button class="contact-send" type="submit">
+              <button class="contact-send" type="submit" name="submit">
                 Send <span></span><span></span><span></span><span></span>
               </button>
             </div>
@@ -212,13 +273,32 @@
       </div>
     </main>
     <!-- Scripts -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+      let samt = 0;
+      window.addEventListener("scroll", function () {
+        samt <= 10 ? samt++ : AOS.refresh();
+      });
     </script>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.js"></script>
-
     <script src="../myPortofolio/js/workbtn.js"></script>
     <script src="../myPortofolio/js/main.js"></script>
+    <script src="../myPortofolio/js/validation.js"></script>
+
+    <!-- <script>
+      const loader = document.querySelector(".loader");
+      const main = document.querySelector(".main");
+
+      function init() {
+        setTimeout(() => {
+          loader.style.opacity = 0;
+          loader.style.display = "none";
+          main.style.display = "block";
+        }, 2500);
+      }
+
+      init();
+    </script> -->
   </body>
 </html>

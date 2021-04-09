@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="399" height="399" viewBox="0 0 399 399">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a4dfe5"/>
+      <stop offset="1" stop-color="#0f6283"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_116" data-name="Group 116" transform="translate(-337 -2396)">
+    <g id="Group_114" data-name="Group 114" transform="translate(18 1175)">
+      <g id="Ellipse_12" data-name="Ellipse 12" transform="translate(319 1221)" stroke="#fff" stroke-width="2" fill="url(#linear-gradient)">
+        <circle cx="199.5" cy="199.5" r="199.5" stroke="none"/>
+        <circle cx="199.5" cy="199.5" r="198.5" fill="none"/>
+      </g>
+      <text id="M" transform="translate(407.01 1325) rotate(90)" fill="#fff" stroke="#fff" stroke-width="2" font-size="200" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">M</tspan></text>
+      <text id="C" transform="translate(504.99 1508)" fill="#fff" stroke="#fff" stroke-width="2" font-size="244" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">C</tspan></text>
+    </g>
+  </g>
+</svg>

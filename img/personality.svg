@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="974" height="452" viewBox="0 0 974 452">
+  <g id="Group_53" data-name="Group 53" transform="translate(-155 -2961)">
+    <g id="Group_18" data-name="Group 18" transform="translate(155 2961)">
+      <g id="Rectangle_6" data-name="Rectangle 6" fill="#ffffea" stroke="#a4dfe5" stroke-width="2">
+        <rect width="263" height="72" rx="36" stroke="none"/>
+        <rect x="1" y="1" width="261" height="70" rx="35" fill="none"/>
+      </g>
+      <text id="patient" transform="translate(69 45)" fill="#5c5757" font-size="25" font-family="ArialMT, Arial" letter-spacing="0.154em"><tspan x="0" y="0">PATIENT</tspan></text>
+    </g>
+    <g id="Group_21" data-name="Group 21" transform="translate(600.237 2996.88)">
+      <g id="Rectangle_6-2" data-name="Rectangle 6" transform="translate(-0.237 0.12)" fill="#ffffea" stroke="#a4dfe5" stroke-width="2">
+        <rect width="264" height="72" rx="36" stroke="none"/>
+        <rect x="1" y="1" width="262" height="70" rx="35" fill="none"/>
+      </g>
+      <text id="open" transform="translate(90.763 45.12)" fill="#5c5757" font-size="25" font-family="ArialMT, Arial" letter-spacing="0.154em"><tspan x="0" y="0">OPEN</tspan></text>
+    </g>
+    <g id="Group_17" data-name="Group 17" transform="translate(287.103 3115.121)">
+      <g id="Rectangle_6-3" data-name="Rectangle 6" transform="translate(-0.103 -0.121)" fill="#ffffea" stroke="#a4dfe5" stroke-width="2">
+        <rect width="263" height="72" rx="36" stroke="none"/>
+        <rect x="1" y="1" width="261" height="70" rx="35" fill="none"/>
+      </g>
+      <text id="organized" transform="translate(41.896 44.879)" fill="#5c5757" font-size="25" font-family="ArialMT, Arial" letter-spacing="0.154em"><tspan x="0" y="0">ORGANIZED</tspan></text>
+    </g>
+    <g id="Group_20" data-name="Group 20" transform="translate(732.341 3176.28)">
+      <g id="Rectangle_6-4" data-name="Rectangle 6" transform="translate(-0.341 -0.28)" fill="#ffffea" stroke="#a4dfe5" stroke-width="2">
+        <rect width="264" height="72" rx="36" stroke="none"/>
+        <rect x="1" y="1" width="262" height="70" rx="35" fill="none"/>
+      </g>
+      <text id="sociable" transform="translate(55.659 44.721)" fill="#5c5757" font-size="25" font-family="ArialMT, Arial" letter-spacing="0.154em"><tspan x="0" y="0">SOCIABLE</tspan></text>
+    </g>
+    <g id="Group_19" data-name="Group 19" transform="translate(418.391 3269.241)">
+      <g id="Rectangle_6-5" data-name="Rectangle 6" transform="translate(-0.391 -0.241)" fill="#ffffea" stroke="#a4dfe5" stroke-width="2">
+        <rect width="264" height="72" rx="36" stroke="none"/>
+        <rect x="1" y="1" width="262" height="70" rx="35" fill="none"/>
+      </g>
+      <text id="team_player" data-name="team player" transform="translate(25.609 44.759)" fill="#5c5757" font-size="25" font-family="ArialMT, Arial" letter-spacing="0.154em"><tspan x="0" y="0">TEAM PLAYER</tspan></text>
+    </g>
+    <g id="Group_16" data-name="Group 16" transform="translate(865.26 3341.001)">
+      <g id="Rectangle_6-6" data-name="Rectangle 6" transform="translate(-0.26 -0.001)" fill="#ffffea" stroke="#a4dfe5" stroke-width="2">
+        <rect width="264" height="72" rx="36" stroke="none"/>
+        <rect x="1" y="1" width="262" height="70" rx="35" fill="none"/>
+      </g>
+      <text id="creative" transform="translate(56.74 44.999)" fill="#5c5757" font-size="25" font-family="ArialMT, Arial" letter-spacing="0.154em"><tspan x="0" y="0">CREATIVE</tspan></text>
+    </g>
+    <line id="Line_1" data-name="Line 1" x2="181.846" y2="35.88" transform="translate(418.799 2997.288)" fill="none" stroke="#a4dfe5" stroke-width="1"/>
+    <line id="Line_2" data-name="Line 2" x1="50.558" y2="118.241" transform="translate(550.087 3033.167)" fill="none" stroke="#a4dfe5" stroke-width="1"/>
+    <line id="Line_3" data-name="Line 3" x2="182.661" y2="61.159" transform="translate(550.087 3151.408)" fill="none" stroke="#a4dfe5" stroke-width="1"/>
+    <line id="Line_4" data-name="Line 4" x1="49.743" y2="92.962" transform="translate(682.19 3212.567)" fill="none" stroke="#a4dfe5" stroke-width="1"/>
+    <line id="Line_5" data-name="Line 5" x2="181.846" y2="71.76" transform="translate(682.19 3305.529)" fill="none" stroke="#a4dfe5" stroke-width="1"/>
+  </g>
+</svg>

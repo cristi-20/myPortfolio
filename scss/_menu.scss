@@ -1,35 +1,33 @@
 // Hamburger Button
 .menu-btn {
   position: absolute;
-  right: 40px;
-  top: 30px;
-  position: fixed;
   z-index: 11;
   cursor: pointer;
   @include easeOut;
-}
+  top:40px;
+  right:30px;
+ 
+  }
 // Navigation Menu.menu-container
 
 .nav-menu {
   position: fixed;
   z-index: 10;
-  top: 0;
   width: 100%;
   visibility: hidden;
   background: rgba(0, 0, 0, 0.8);
-  padding: 2rem;
+  padding: 2rem 0;
   transform: translate(0, -600px);
   @include easeOut;
+  
 
   &.show {
     transform: translate(0, 0);
   }
 
   .nav-ul {
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-size: 1.3rem;
+    @include flex;
 
     // Delay each nav item slide by 0.1s
     @for $x from 1 through 4 {
@@ -74,7 +72,7 @@
         color: $text_color;
         letter-spacing: 2px;
         padding-bottom:.4rem;
-        font-weight: bold;
+        font-weight: 500;
       }
     }
   }
