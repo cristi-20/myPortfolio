@@ -1,9 +1,10 @@
 // Color Variables
 $primary_color: #0f6283;
-$secondary_color:#A4DFE5;
+$secondary_color:#92eef7;
 $text_color:#ffffff;
 $text_color1:#5C5757;
-$bg_color:#ffffff;
+$bg_color: #e6e6e6
+;
 $black:#000;
 
 
@@ -19,34 +20,33 @@ $black:#000;
 }
 // Main call to action
 .work-btn {
-  letter-spacing: 4px;
-  text-align: center;
-  color: $secondary_color;
+  color: $text_color1;
   position: relative;
   @include easeOut;
   font-weight: bold;
-  text-transform: uppercase;
-  padding: 0.5rem 1rem;
+  // text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
   overflow: hidden;
-  border: 1px solid $bg_color;
-  border-radius: 50px;
   z-index: 1;
   font-weight: bold;
   font-size: 1rem;
+  background:$secondary_color;
+  border:1px solid $secondary_color;
 
   &:hover {
-    color: $text_color1;
+    color: $text_color;
   }
 
   &:hover span {
     transform: translateY(0) scale(2);
+   
   }
 
   span {
     position: absolute;
     width: 25%;
     height: 100%;
-    background-color: $secondary_color;
+    background-color: $primary_color;
     transform: translateY(150%);
     left: calc((var(--n) - 1) * 25%);
     transition: 0.5s;
@@ -72,11 +72,46 @@ $black:#000;
   }
 }
 
+.about-me {
+  @extend .work-btn;
+  background:none;
+  color:$text_color;
+  margin-left: 1rem;
+
+  &:hover {
+color:$text_color1;
+  }
+
+  span {
+    background:$secondary_color;
+  }
+}
+
+.cv-btn {
+  @extend .about-me;
+  border:1px solid $primary_color;
+  color:$text_color1;
+
+  &:hover {
+    color:white;
+  }
+
+  span {
+    background:$primary_color;
+  }
+}
+
+
+
+
+
 .contact-send {
   @extend .work-btn;
-  border:1px solid $secondary_color;
   color:$text_color;
   margin-top: 1rem;
+  background:$primary_color;
+  border-radius:5px;
+  border:none;
 
   span {
     background-color:$secondary_color;
@@ -87,73 +122,88 @@ $black:#000;
   }
 }
 
-.cta-wrap {
-  .about-me {
-    position: relative;
-    font-size: 1.1rem;
-    letter-spacing: 3px;
-    font-weight: 600;
-    padding: 0.4rem 1rem;
-    color:$text_color;
-   
-    
-    &::before, &::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      right: 0;
-      height: 2px;
-      z-index:1000;
-      background-color: #A4DFE5;
-      transform-origin: center right;
-      -webkit-transform-origin: center right;
-      -moz-transform-origin: center right;
-      transform: scaleX(0);
-      -moz-transform: scaleX(0);
-      -webkit-transform: scaleX(0);
-      transition: transform 0.5s ease;
-    }
-    
-    &::before {
-      top: 0;
-    }
-    
-    &::after {
-      bottom: 0;
-    }
-    
-    &:hover::before, &:hover::after {
-      transform-origin: center left;
-      -moz-transform-origin: center left;
-      -webkit-transform-origin: center left;
-      transform: scaleX(1);
-    }
-    
+
+
+// Social Buttons
+.icon-button {
+  width: 50px;
+  height:50px;
+  background:$text_color;
+  border-radius:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  -webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+
+          &:hover span {
+            width:100%;
+            height:100%;
+            border-radius:100%; 
+          }
+
+          &:hover i {
+            color:$text_color;
+          }
+
+  span {
+    border-radius:0;
+	height: 0;
+	margin: 0;
+	position: absolute;
+  width:0;
+  @include easeOut;
   }
+
+  .facebook  {
+  background: #3B5998;
+  }
+  .github {
+    background:#24292e;
+  }
+  .linkedin {
+    background:#0675e7;
+  }
+
+  .fa-facebook-f {
+    color:#0675e7;
+  }
+
+  .fa-github {
+    color:#24292e;
+  }
+
+  .fa-linkedin {
+    color:#0a66c2;
+  }
+
+  i {
+    position:relative;
+    z-index:100;
+    font-size: 1.5rem;
+  }
+
+  
+  
 }
-
-
-
 
 //  Buttons End
 
 // Animations
-
-.animate__animated.animate__rotateInDownRight {
-  animation-delay: 0.2s;
+.animate__animated .animate__fadeInLeftBig {
+  animation-delay:.5s;
 }
 
-.animate__animated.animate__lightSpeedInLeft {
-  animation-delay: 0.7s;
+.main,.animate__zoomInLeft,.animate__fadeInDown,.animate__fadeInDown,.animate__slideInLeft,.animate__slideInRight {
+  animation-delay:2.6s;
 }
-
-
-
 
 // Animations End
 
 // Mixins
-
 
 @mixin flex {
   display:flex;
@@ -222,3 +272,69 @@ $black:#000;
     transform: rotate(360deg);
   }
 }
+
+// Hero Background Gradient
+$hero_bg:radial-gradient(
+  circle at 82% 60%,
+  rgba(59, 59, 59, 0.06) 0%,
+  rgba(59, 59, 59, 0.06) 69%,
+  transparent 69%,
+  transparent 100%
+),
+radial-gradient(
+  circle at 36% 0%,
+  rgba(185, 185, 185, 0.06) 0%,
+  rgba(185, 185, 185, 0.06) 59%,
+  transparent 59%,
+  transparent 100%
+),
+radial-gradient(
+  circle at 58% 82%,
+  rgba(183, 183, 183, 0.06) 0%,
+  rgba(183, 183, 183, 0.06) 17%,
+  transparent 17%,
+  transparent 100%
+),
+radial-gradient(
+  circle at 71% 32%,
+  rgba(19, 19, 19, 0.06) 0%,
+  rgba(19, 19, 19, 0.06) 40%,
+  transparent 40%,
+  transparent 100%
+),
+radial-gradient(
+  circle at 77% 5%,
+  rgba(31, 31, 31, 0.06) 0%,
+  rgba(31, 31, 31, 0.06) 52%,
+  transparent 52%,
+  transparent 100%
+),
+radial-gradient(
+  circle at 96% 80%,
+  rgba(11, 11, 11, 0.06) 0%,
+  rgba(11, 11, 11, 0.06) 73%,
+  transparent 73%,
+  transparent 100%
+),
+radial-gradient(
+  circle at 91% 59%,
+  rgba(252, 252, 252, 0.06) 0%,
+  rgba(252, 252, 252, 0.06) 44%,
+  transparent 44%,
+  transparent 100%
+),
+radial-gradient(
+  circle at 52% 82%,
+  rgba(223, 223, 223, 0.06) 0%,
+  rgba(223, 223, 223, 0.06) 87%,
+  transparent 87%,
+  transparent 100%
+),
+radial-gradient(
+  circle at 84% 89%,
+  rgba(160, 160, 160, 0.06) 0%,
+  rgba(160, 160, 160, 0.06) 57%,
+  transparent 57%,
+  transparent 100%
+),
+linear-gradient(90deg, rgb(6, 85, 116), rgb(6, 85, 116));

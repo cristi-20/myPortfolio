@@ -1,149 +1,248 @@
 // Tablets 
 @media (min-width:768px) {
+
+    .nav-logo-container,.hero-container,.about-container,.form,.card-container {
+        width:85%;
+        margin: 0 auto;
+        max-width:1200px;
+    }
     // Start Home
-// Show Full Navigation
-.menu-btn {
-    display:none;
-}
+    // Show Full Navigation
+    .menu-btn {
+        display: none;
+    }
 
-.bg-unset {
-        background-image: unset;
-        background:$primary_color;
-}
+    .header {
+        .nav-logo-container {
+            display:flex;
+            align-items: center;
+            padding:1rem 0;
+        }
 
-
-.header {
-    display:flex;
-    align-items: center;
-
-    .nav-logo-container {
-        width:90%;
         .logo-container {
             width:20%;
-          }
-    }
 
-    .logo-container {
-        width:30%;
-        display:flex;
-        justify-content: flex-start;
-      }
-      .logo {
-        position:unset;
-      }
-    .nav-menu {
-        visibility: visible;
-        transform: none;
-        background-color:transparent;
-        display:flex;
-        align-items: center;
-        justify-content: flex-end;
-        position:unset;
-        
-        .nav-item {
-            transform: none;
-            margin:0;
-            margin-left: 1.7rem;
-        }
-    
-        .nav-ul {
-            flex-direction: row;
-            justify-content:flex-end;
-            align-items: center;
-            width:
-            100%;
-           margin:0;
-           font-size: 1rem;
-        }
-    }
-}
-
-    .hero {
-        height:55vh;
-        h1 {
-            font-size: 3.2rem;
-        }
-
-        h3 {
-            font-size: 1.5rem;
-              }  
-    }
-
-    .projects {
-        .guitars-logo {
-            width:300px;
-        }   
-    }
-   
-    .about {
-        .social-media {
-            width:50%;
-        }
-    }
-    
-    .contact-form {
-        .form {
-            .form-container {
-                width:600px;
+            .logo {
+                position: unset;
+            
             }
         }
         
-    }
-     // End Home
-    
 
+        .nav-menu {
+            visibility: visible;
+            transform: none;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            position: unset;
+
+            .nav-item {
+                transform: none;
+                margin: 0;
+                margin-left: 2rem;
+            }
+
+            .nav-ul {
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                margin: 0;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .main {
+        .hero {
+            height: 50vh;
+            justify-content: flex-start;
+
+            &-text {
+                position: unset;
+                margin-top: 5rem;
+                max-width:700px;
+
+                h1 {
+                    font-size: 2rem;
+                    width: 80%;
+                   
+                }
+            }
+
+            .cta {
+                position: unset;
+            }
+        }
+    }
+
+    .projects {
+        padding: 0;
+
+        .card-container {
+            h1 {
+                text-align: left;
+            }
+
+            .card,
+            .card-info {
+                max-width: 350px;
+            }
+        }
+    }
+
+    .about {
+        .about-container {
+            padding:0;
+
+            .about-wrap {
+                align-items: flex-start;
+            }
+            .about-text {
+                width:100%;
+                font-size: 1.1rem;
+                margin:0;
+                margin-bottom: 3rem;
+            }
+
+            .photo {
+                .myPhoto {
+                    margin-bottom: 3rem;
+                }
+            }
+
+            .social-media {
+                width: 50%;
+                margin: 3rem 0;
+            }
+        }
+    }
+
+    .contact-form {
+        .form {
+                .contact-send {
+                    width: 200px;
+                }
+            }
+        
+    }
+    
     // Start Resume
     .resume-container {
         width: 90%;
         margin: 0 auto;
 
         .message-case {
-            width:70%;
+            width: 70%;
         }
+
         .resume {
-            margin-top:4rem;
+            margin-top: 4rem;
 
             .item {
-                width:70%;
+                width: 70%;
             }
 
-.wrapper {
-    .skills-tools {
-        .tools {
-            .vs-code {
-                font-size: 1.3rem;
-                margin:0;
+            .wrapper {
+                .skills-tools {
+                    .tools {
+                        .vs-code {
+                            font-size: 1.3rem;
+                            margin: 0;
+                        }
+                    }
+                }
+
+                .traits-illustration {
+                    margin-bottom: 10rem;
+
+                    .illustration {
+                        width: 65%;
+                    }
+                }
             }
-        }
-    }
-    
-    .traits-illustration {
-        margin-bottom:10rem;
-        .illustration {
-            width:65%;
         }
     }
 }
-        }
-    }
-    // End Resume
-}
+// End Resume
 
-
+// Md Tablets
 @media (min-width:1024px) {
-    
-    .projects {
-        flex-direction: row;
-        justify-content: space-around;
-        width:100%;
+    .main {
+        .hero {
+            height: 35vh;
+        }
+    }
 
-        .vintage-guitar {
-            .guitars-logo {
-                margin:0;
+
+    .about {
+
+        &:before {
+            font-size: 20rem;
+        }
+
+        .about-container {
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            column-gap:5rem;
+            padding:7rem 0;
+            place-items: start;
+            max-width:1200px;
+
+            .about-wrap {
+                align-items: flex-start;
+
+                .about-text {
+                    margin-top: 0;
+                    text-align: left;
+                    width:100%;
+                }
+
+                .social-media {
+                    justify-content: flex-start;
+                    margin: 4rem 0;
+                    width: 100%;
+
+                    .icon-button {
+                        margin-right: 2rem;
+                    }
+                }
+            }
+
+            .photo {
+                .myPhoto {
+                    width: 100%;
+                    margin:0;
+                }
             }
         }
     }
+
+    .contact-form {
+        .form {
+            display:grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    column-gap:5rem;
+    max-width:1200px;
+
+    .form-container {
+       width:100%;
+    }
+
+    .contact-illustration {
+     display:flex;
+     justify-content: center;
+        .illustration {
+            display:block;
+        }
+        
+    }
     
+        }
+    }
+
     // Start Resume
     .resume-container {
         .resume {
@@ -157,8 +256,8 @@
 
             .lg-size-work {
                 display: grid;
-                width:100%;
-                grid-template-columns: repeat(auto-fit,minmax(340px,300px));
+                width: 100%;
+                grid-template-columns: repeat(auto-fit, minmax(340px, 300px));
                 justify-content: center;
                 column-gap: 2rem;
 
@@ -168,7 +267,7 @@
                 }
             }
 
-            .skills-tools{
+            .skills-tools {
                 display: flex;
                 justify-content: space-around;
                 width: 100%;
@@ -180,71 +279,69 @@
 }
 
 @media (min-width:1200px) {
+
     // Start Home
     .header {
         .nav-logo-container {
-            max-width:1200px;
-            display:flex;
-            justify-content: center;
-
+            
             .nav-menu {
-                padding:2rem 0;
-            }
-
-            .logo-container {
-                .logo {
-                    width:27%;
-                }
-            }
-          }
+                padding: 2rem 0;
+            } 
+        }
     }
-    
 
-    .hero { 
-        max-height:60vh;
-
+    .main {
+        .hero {
+            height: 500px;
+            background-size: 500px;
+        }
     }
+
     // End Home
 
 
 
 
-// Start Resume
-.resume-container {
-    .resume {
-        .info-contact,.education-language {
-            column-gap:4rem;
-        }
-          .about-me { 
-            .message-case {
-                font-size: 1.2rem;
-                            }
-          }  
-        
-}
+    // Start Resume
+    .resume-container {
+        .resume {
 
-.resume {
-    .wrapper {
-        flex-direction: row; 
-        margin-bottom: 5rem;
-            .skills-tools {
-                .skills {
-                   row-gap: 1rem;
-                   margin:0;
+            .info-contact,
+            .education-language {
+                column-gap: 4rem;
+            }
+
+            .about-me {
+                .message-case {
+                    font-size: 1.2rem;
                 }
             }
-            
-     
-        .traits-illustration {
-            .illustration {
-                width:90%;
+
+        }
+
+        .resume {
+            .wrapper {
+                flex-direction: row;
+                margin-bottom: 5rem;
+
+                .skills-tools {
+                    .skills {
+                        row-gap: 1rem;
+                        margin: 0;
+                    }
+                }
+
+
+                .traits-illustration {
+                    .illustration {
+                        width: 90%;
+                    }
+                }
             }
         }
+
+
     }
-}
 
-
+    // End Resume
 }
-// End Resume
-}
-

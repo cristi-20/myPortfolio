@@ -4,6 +4,10 @@
 
 
 
+.header {
+    background:$primary_color;
+}
+
 
 .resume-container {
     overflow: hidden;
@@ -31,18 +35,12 @@
         }
 
         .send-btn {
-            border: 1px solid $secondary_color;
-            padding: 1rem 1rem;
-            border-radius: 50px;
             font-size: 1.1rem;
             font-weight: bold;
             color: $text_color;
             letter-spacing: 2px;
-            margin-top: 10rem;
-
-            &:hover {
-                color: $text_color1;
-            }
+            margin-top: 4rem;
+            @include easeOut;
         }
 
         .design-top {
@@ -114,7 +112,7 @@
             }
         }
 
-        .about-me {
+        .aboutMe {
             margin-bottom: 5rem;
             .message-case {
                 position: relative;

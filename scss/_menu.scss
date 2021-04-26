@@ -6,7 +6,6 @@
   @include easeOut;
   top:40px;
   right:30px;
- 
   }
 // Navigation Menu.menu-container
 
@@ -20,6 +19,7 @@
   transform: translate(0, -600px);
   @include easeOut;
   
+  
 
   &.show {
     transform: translate(0, 0);
@@ -28,6 +28,7 @@
   .nav-ul {
     font-size: 1.3rem;
     @include flex;
+
 
     // Delay each nav item slide by 0.1s
     @for $x from 1 through 4 {
@@ -49,18 +50,19 @@
       &::before {
         content: '';
         position: absolute;
-        bottom: 0;
+        bottom: 50%;
+        top:50%;
         left: 0;
         right: 0;
-        height: 3px;
-        background-color:#A4DFE5;
-        transform-origin: bottom right;
+        height: 2px;
+        background-color:$text_color1;
+        transform-origin: middle;
         transform: scaleX(0);
         transition: transform 0.5s ease;
       }
       
       &:hover::before {
-        transform-origin: bottom left;
+        transform-origin: middle;
         transform: scaleX(1);
       }
 
@@ -70,8 +72,7 @@
 
       .link-nav{
         color: $text_color;
-        letter-spacing: 2px;
-        padding-bottom:.4rem;
+        padding-bottom:0rem;
         font-weight: 500;
       }
     }

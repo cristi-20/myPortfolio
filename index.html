@@ -8,6 +8,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -36,14 +43,14 @@
     <title>myPortfolio</title>
   </head>
   <body>
-    <div class="loader">
+    <!-- <div class="loader">
       <svg class="loading" viewBox="0 0 50 50">
         <circle class="ring" cx="25" cy="25" r="20"></circle>
         <circle class="ball" cx="25" cy="5" r="3.5"></circle>
       </svg>
-    </div>
+    </div> -->
     <main class="main animate__animated animate__fadeIn">
-      <div class="gradient-bg">
+      <div class="header-hero">
         <header class="header">
           <!-- Hamburger Menu -->
           <button
@@ -59,29 +66,30 @@
           <div class="nav-logo-container">
             <div class="logo-container">
               <img
-                class="logo"
-                href="index.html"
+                class="logo animate__animated animate__zoomInLeft"
                 src="../myPortofolio/img/logo.svg"
-                alt=""
+                alt="logo"
               />
             </div>
             <!-- Hamburger Menu End-->
             <nav class="nav-menu">
-              <ul class="nav-ul">
+              <ul class="nav-ul animate__animated animate__fadeInDown">
                 <li class="nav-item">
-                  <a class="link-nav current" href="index.html">Home</a>
+                  <a class="link-nav current" href="index.html">home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="link-nav" href="#projects">Projects</a>
+                  <a class="link-nav" href="#projects">projects</a>
                 </li>
                 <li class="nav-item">
-                  <a class="link-nav" href="resume.html" id="resume">Resume</a>
+                  <a class="link-nav" href="resume.html" id="resume">resume</a>
                 </li>
                 <li class="nav-item">
-                  <a class="link-nav" href="#about">About Me</a>
+                  <a class="link-nav" href="#about">about me</a>
                 </li>
-                <li class="nav-item">
-                  <a class="link-nav" href="#contact">Contact</a>
+                <li
+                  class="nav-item animate__animated animate__pulse animate__infinite"
+                >
+                  <a class="link-nav" href="#contact">contact</a>
                 </li>
               </ul>
             </nav>
@@ -89,188 +97,256 @@
         </header>
 
         <section class="hero">
-          <div class="hero-text">
-            <h3 class="animate__animated animate__rotateInDownRight">
-              Manta Cristian
-            </h3>
-            <h1 class="animate__animated animate__lightSpeedInLeft">
-              <span class="web">Web</span> Developer
-            </h1>
-            <p class="animate__animated animate__fadeIn">
-              I am a self-taught web developer looking to find work.
-            </p>
-          </div>
-          <div class="cta-wrap">
-            <a href="#projects">
-              <button class="work-btn animate__animated animate__slideInLeft">
-                See My Work
-                <span></span><span></span><span></span><span></span>
-              </button>
-            </a>
-
-            <a href="#about"
-              ><button class="about-me animate__animated animate__slideInRight">
-                About Me
-              </button></a
-            >
-          </div>
-
-          <div class="wave-shape">
-            <svg
-              data-name="Layer 1"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1200 120"
-              preserveAspectRatio="none"
-            >
-              <path
-                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                class="shape-fill"
-              ></path>
-            </svg>
-          </div>
-        </section>
-      </div>
-      <div class="container">
-        <!-- Start Projects -->
-        <section id="projects" class="projects">
-          <div class="vintage-guitar">
-            <a href="https://www.mcristian.ro/product landing page/"
-              ><img
-                class="guitars-logo"
-                src="../myPortofolio/img/guitars-logo.svg"
-                data-aos="flip-right"
-                data-aos-delay="400"
-                alt="guitars logo"
-            /></a>
-          </div>
-          <div class="skills">
-            <ul class="circle-container">
-              <div class="skill-item">
-                <img
-                  data-aos="fade-left"
-                  data-aos-delay="100"
-                  src="../myPortofolio/img/html-5-logo.svg"
-                  alt=""
-                />
-              </div>
-              <div class="skill-item">
-                <img
-                  data-aos="fade-left"
-                  data-aos-delay="200"
-                  src="../myPortofolio/img/css3-logo.svg"
-                  alt=""
-                />
-              </div>
-              <div class="skill-item">
-                <img
-                  data-aos="fade-left"
-                  data-aos-delay="300"
-                  src="../myPortofolio/img/sass-logo.svg"
-                  alt=""
-                />
-              </div>
-              <div class="skill-item">
-                <img
-                  data-aos="fade-right"
-                  data-aos-delay="400"
-                  src="../myPortofolio/img/javascript-logo.svg"
-                  alt=""
-                />
-              </div>
-              <div class="skill-item">
-                <img
-                  data-aos="fade-right"
-                  data-aos-delay="500"
-                  src="../myPortofolio/img/tailwindcss.svg"
-                  alt=""
-                />
-              </div>
-              <div class="skill-item">
-                <img
-                  data-aos-delay="600"
-                  data-aos="fade-right"
-                  src="../myPortofolio/img/adobe-xd-logo.svg"
-                  alt=""
-                />
-              </div>
-            </ul>
-          </div>
-        </section>
-        <!-- End Projects -->
-        <!-- Start About -->
-        <section class="about">
-          <div class="social-media">
-            <a href="https://github.com/cristi-20?tab=repositories"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a href="https://www.facebook.com/manta.cristian20"
-              ><i class="fab fa-facebook"></i
-            ></a>
-            <a href="https://www.linkedin.com/in/manta-paul-cristian-31a26a209/"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-          </div>
-        </section>
-        <!-- End About -->
-
-        <!-- Start Contact form -->
-        <section id="contact" class="contact-form">
-          <form class="form" id="form" action="contactform.php" method="post">
-            <h1>Let's talk!</h1>
-            <p>
-              Send me an e-mail,<br />
-              don't be shy!
-            </p>
-            <div class="form-container">
-              <label for="firstname">First Name*</label>
-              <input
-                class="hvr-border-fade"
-                id="firstname"
-                name="name"
-                type="text"
-              />
-
-              <label for="lastname">Last Name*</label>
-              <input
-                class="hvr-border-fade"
-                id="lastname"
-                name="name"
-                type="text"
-              />
-
-              <label for="e-mail">E-mail*</label>
-              <input
-                class="hvr-border-fade"
-                id="e-mail"
-                name="email"
-                type="email"
-              />
-
-              <label for="subject">Subject*</label>
-              <input
-                class="hvr-border-fade"
-                id="subject"
-                name="subject"
-                type="text"
-              />
-
-              <label for="message">Message</label>
-              <textarea
-                class="hvr-border-fade"
-                name="message"
-                id="message"
-                cols="30"
-                rows="10"
-              ></textarea>
-
-              <button class="contact-send" type="submit" name="submit">
-                Send <span></span><span></span><span></span><span></span>
-              </button>
+          <div class="hero-container">
+            <div class="hero-text animate__animated animate__fadeInDown">
+              <h3>My name is <span class="standout"> Cristian</span></h3>
+              <h1>
+                <span class="regular">I can create</span> beautiful interfaces
+                <span class="regular">and</span> awesome experiences.
+              </h1>
             </div>
-          </form>
+            <div class="cta">
+              <a href="#projects">
+                <button class="work-btn animate__animated animate__slideInLeft">
+                  Projects
+                  <span></span><span></span><span></span><span></span>
+                </button>
+              </a>
+
+              <a href="#about"
+                ><button
+                  class="about-me animate__animated animate__slideInRight"
+                >
+                  About
+                  <span></span><span></span><span></span><span></span></button
+              ></a>
+            </div>
+
+            <div class="wave-shape">
+              <svg
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 120"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                  class="shape-fill"
+                ></path>
+              </svg>
+            </div>
+          </div>
         </section>
-        <!-- End Contact form -->
       </div>
+
+      <!-- Start Projects -->
+      <section id="projects" class="projects">
+        <div class="card-container">
+          <h1>My Projects</h1>
+
+          <div class="card">
+            <a href="https://www.mcristian.ro/product landing page">
+              <h1 class="card-title">Vintage Guitar</h1>
+            </a>
+          </div>
+          <div class="card-info">
+            <h3>Details</h3>
+            <p>
+              Vintage Guitar magazine is a guitar store interface. I made it
+              with Html, Css, Vanilla JavaScript, and added a few jQuery
+              plugins.
+            </p>
+
+            <div class="btn-wrapper">
+              <div class="github-btn">
+                <a href="">
+                  <button class="github">
+                    <i class="fab fa-github"></i>Github
+                  </button>
+                </a>
+              </div>
+              <div class="card-skills">
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js-square"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Projects -->
+
+      <!-- Start About -->
+      <section class="about">
+        <div class="about-container">
+          <div class="about-wrap">
+            <div class="about-text" data-aos="fade-right">
+              I am a web development passionate looking to further improve my
+              skills.I am a self-learner but I'm excited to work on a team and
+              exchange knowledge with my colleagues.
+            </div>
+
+            <div class="cta" data-aos="fade-right">
+              <a href="#projects">
+                <button class="work-btn">
+                  Projects
+                  <span></span><span></span><span></span><span></span>
+                </button>
+              </a>
+
+              <a href="resume.html"
+                ><button class="cv-btn">
+                  CV
+                  <span></span><span></span><span></span><span></span></button
+              ></a>
+            </div>
+
+            <!-- <div class="social-media">
+              <a
+                class="icon-button"
+                href="https://github.com/cristi-20?tab=repositories"
+                ><i class="fab fa-github"></i><span class="github"></span
+              ></a>
+              <a
+                class="icon-button"
+                href="https://www.facebook.com/manta.cristian20"
+                ><i class="fab fa-facebook-f"></i><span class="facebook"></span
+              ></a>
+              <a
+                class="icon-button"
+                href="https://www.linkedin.com/in/manta-paul-cristian-31a26a209/"
+                ><i class="fab fa-linkedin"></i><span class="linkedin"></span
+              ></a>
+            </div> -->
+          </div>
+          <div class="photo" data-aos="fade-left">
+            <img
+              class="myPhoto"
+              src="../myPortofolio/img/my photo.jpg"
+              alt="personal photo"
+            />
+          </div>
+        </div>
+        <div class="shape-divider">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M1200 0L0 0 892.25 114.72 1200 0z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+      </section>
+
+      <!-- End About -->
+
+      <!-- Start Skills -->
+      <section class="skills">
+        <div class="skills">
+          <ul class="circle-container">
+            <div class="skill-item">
+              <img
+                data-aos="fade-left"
+                data-aos-delay="100"
+                src="../myPortofolio/img/html-5-logo.svg"
+                alt=""
+              />
+            </div>
+            <div class="skill-item">
+              <img
+                data-aos="fade-left"
+                data-aos-delay="200"
+                src="../myPortofolio/img/css3-logo.svg"
+                alt=""
+              />
+            </div>
+            <div class="skill-item">
+              <img
+                data-aos="fade-left"
+                data-aos-delay="300"
+                src="../myPortofolio/img/sass-logo.svg"
+                alt=""
+              />
+            </div>
+            <div class="skill-item">
+              <img
+                data-aos="fade-right"
+                data-aos-delay="400"
+                src="../myPortofolio/img/javascript-logo.svg"
+                alt=""
+              />
+            </div>
+            <div class="skill-item">
+              <img
+                data-aos="fade-right"
+                data-aos-delay="500"
+                src="../myPortofolio/img/tailwindcss.svg"
+                alt=""
+              />
+            </div>
+            <div class="skill-item">
+              <img
+                data-aos-delay="600"
+                data-aos="fade-right"
+                src="../myPortofolio/img/adobe-xd-logo.svg"
+                alt=""
+              />
+            </div>
+          </ul>
+        </div>
+      </section>
+      <!-- End Skills -->
+
+      <!-- Start Contact form -->
+      <section id="contact" class="contact-form">
+        <div class="contact-text">
+          <h1>Let's talk!</h1>
+        </div>
+        <form class="form" id="form" action="contactform.php" method="post">
+          <div class="form-container">
+            <label for="firstname">Name</label>
+            <input
+              class="hvr-border-fade"
+              id="firstname"
+              name="name"
+              type="text"
+            />
+
+            <label for="e-mail">E-mail</label>
+            <input
+              class="hvr-border-fade"
+              id="e-mail"
+              name="email"
+              type="email"
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              class="hvr-border-fade"
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+
+            <button class="contact-send" type="submit" name="submit">
+              Send <span></span><span></span><span></span><span></span>
+            </button>
+          </div>
+          <div class="contact-illustration">
+            <img
+              class="illustration"
+              src="../myPortofolio/img/contact-illustration.svg"
+              alt=""
+            />
+          </div>
+        </form>
+      </section>
+      <!-- End Contact form -->
     </main>
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -286,7 +362,7 @@
     <script src="../myPortofolio/js/main.js"></script>
     <script src="../myPortofolio/js/validation.js"></script>
 
-    <script>
+    <!-- <script>
       const loader = document.querySelector(".loader");
       const main = document.querySelector(".main");
 
@@ -299,6 +375,6 @@
       }
 
       init();
-    </script>
+    </script> -->
   </body>
 </html>
