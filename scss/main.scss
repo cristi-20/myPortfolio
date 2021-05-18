@@ -27,7 +27,6 @@ background-attachment: fixed;
 
 
 .header {
- 
   .logo {
     width:50px;
     position:absolute;
@@ -43,6 +42,52 @@ background-attachment: fixed;
 justify-content: center;
 height:90vh;
 position: relative;
+
+.hero-skills {
+  width:100%;
+  @include flex;
+ 
+
+  .skills {
+    position: absolute;
+    bottom:-25%;
+    .circle-container {
+     @include on-circle($item-count: 6, $circle-size:14em, $item-size: 4em);
+     opacity:0.5;
+    
+   
+     &:hover {
+       animation:rotate 13s linear infinite;
+       @include easeOut;
+       cursor: pointer;
+       opacity:1;
+     }
+ 
+     @keyframes rotate {
+       to {
+         transform: rotate(360deg);
+       }
+       
+     }
+ 
+     .skill-item {
+       @include flex;
+       justify-content: center;
+       background: #f2f2f2;
+       padding:1.1rem;
+       border-radius:10px;
+       box-shadow: 2px 3px 3px 1px rgba(0,0,0,0.56);
+     -webkit-box-shadow: 2px 3px 3px 1px rgba(0,0,0,0.56);
+     -moz-box-shadow: 2px 3px 3px 1px rgba(0,0,0,0.56);
+     
+     img {
+       width:50px;
+       height:50px;
+     }
+      }
+    }
+   }
+  }
 
 .hero-text,.cta {
   left:30px;
@@ -83,6 +128,8 @@ h1 {
 
   .cta {
     display:flex;
+    justify-content: flex-start;
+    width:100%;
   }
 
   .wave-shape {
@@ -103,13 +150,14 @@ h1 {
 .wave-shape .shape-fill {
     fill: $text_color;
 }
+
 }
 //  End Hero
 
 // Start Projects
 .projects {
   padding:1.5rem;
-  margin: 7rem 0 10rem 0;
+  margin: 15rem 0 10rem 0;
 
   h1 {
     font-size: 2rem;
@@ -245,7 +293,7 @@ color:$secondary_color;
 
   // Start About
   .about {
-    margin:7rem 0 10rem 0;
+    margin:7rem 0 5rem 0;
   position:relative;
   
   &:before {
@@ -357,45 +405,10 @@ z-index:100;
   }
   // End About
 
-  // Start Skills
-  .skills {
-    .circle-container {
-     @include on-circle($item-count: 6, $circle-size:14em, $item-size: 4em);
-   
-     &:hover {
-       animation:rotate 13s linear infinite;
-       @include easeOut;
-     }
- 
-     @keyframes rotate {
-       to {
-         transform: rotate(360deg);
-       }
-       
-     }
- 
-     .skill-item {
-       @include flex;
-       justify-content: center;
-       background: #f2f2f2;
-       padding:1.1rem;
-       border-radius:10px;
-       box-shadow: 2px 3px 3px 1px rgba(0,0,0,0.56);
-     -webkit-box-shadow: 2px 3px 3px 1px rgba(0,0,0,0.56);
-     -moz-box-shadow: 2px 3px 3px 1px rgba(0,0,0,0.56);
-     
-     img {
-       width:50px;
-       height:50px;
-     }
-      }
-    }
-   }
-  // End Skills
 
 // Start Contact form
 .contact-form {
-  margin:7rem  0 5rem 0;
+  margin:0  0 5rem 0;
 
   .contact-text {
     width:85%;

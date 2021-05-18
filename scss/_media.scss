@@ -56,13 +56,13 @@
 
     .main {
         .hero {
-            height: 50vh;
+            height: 85vh;
             justify-content: flex-start;
 
             &-text {
                 position: unset;
                 margin-top: 5rem;
-                max-width:700px;
+                
 
                 h1 {
                     font-size: 2rem;
@@ -169,15 +169,22 @@
 
 // Md Tablets
 @media (min-width:1024px) {
-    .main {
-        .hero {
-            height: 35vh;
+
+    .hero {
+        .hero-skills {
+            margin-top: 3rem;
+            width:85%;
+            flex-direction: row;
+            max-width:1200px;
+
+            .skills {
+                position:unset;
+            }
         }
+        
     }
-
-
+   
     .about {
-
         &:before {
             font-size: 20rem;
         }
@@ -292,7 +299,7 @@
 
     .main {
         .hero {
-            height: 500px;
+            height: 600px;
             background-size: 500px;
         }
     }
